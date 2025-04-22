@@ -11,7 +11,7 @@ export default function UrgencyPopup() {
   const [visitors, setVisitors] = useState(0)
   const popupRef = useRef<HTMLDivElement>(null)
 
-  const fixedEndDate = new Date("2025-04-01T00:00:00")
+  const fixedEndDate = new Date("2025-05-11T00:00:00")
   const [countdown, setCountdown] = useState({ hours: 0, minutes: 0, seconds: 0 })
 
   useEffect(() => {
