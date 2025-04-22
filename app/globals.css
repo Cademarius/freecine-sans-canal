@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 270 85% 7%;
+    --foreground: 0 0% 98%;
+
+    --card: 270 70% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 270 70% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 336 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 270 70% 30%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 270 50% 15%;
+    --muted-foreground: 240 5% 84%;
+
+    --accent: 270 70% 30%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 270 70% 30%;
+    --input: 270 70% 30%;
+    --ring: 336 100% 50%;
+
+    --radius: 0.75rem;
+  }
+
+  .light {
+    --background: 0 0% 100%;
+    --foreground: 270 70% 10%;
+
+    --card: 0 0% 98%;
+    --card-foreground: 270 70% 10%;
+
+    --popover: 0 0% 98%;
+    --popover-foreground: 270 70% 10%;
+
+    --primary: 336 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 270 70% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 270 30% 40%;
+
+    --accent: 270 70% 95%;
+    --accent-foreground: 270 70% 30%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 270 30% 80%;
+    --input: 270 30% 80%;
+    --ring: 336 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0118;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #ff2970, #7b2cbf);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #ff2970, #4cc9f0);
+}
