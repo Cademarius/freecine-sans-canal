@@ -10,7 +10,7 @@ export default function AppShowcase() {
     {
       name: "Mobile / PC / Mac / Smart TV",
       icon: <Smartphone className="h-6 w-6 text-[#ff2970]" />,
-      image: "/mobile.jpg?height=300&width=300",
+      image: "/image1.jpg?height=300&width=300",
       description: "Emportez vos films et séries partout avec vous",
       gradient: "from-[#ff2970]/20 to-[#ff9770]/20",
       border: "border-[#ff2970]/30",

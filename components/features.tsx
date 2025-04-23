@@ -242,7 +242,7 @@ export default function Features() {
             </div>
             <div className="flex items-center justify-center">
               <div className="group relative h-64 w-64 overflow-hidden rounded-xl">
-                <div className="absolute -inset-0.5 animate-pulse rounded-xl bg-gradient-to-r from-[#ff2970] via-[#7b2cbf] to-[#4cc9f0] opacity-70 blur-sm transition-all duration-300 group-hover:opacity-100"></div>
+                <div className="absolute -inset-0.5 animate-pulse rounded-xl bg-[#ff2970] opacity-70 blur-sm transition-all duration-300 group-hover:opacity-100"></div>
                 <div className="relative h-full w-full overflow-hidden rounded-xl">
                   <img
                     src="/freecine.png?height=400&width=400"

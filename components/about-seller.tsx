@@ -66,7 +66,7 @@ export default function AboutSeller() {
                 <div className="relative h-16 w-16 overflow-hidden rounded-full">
                   <div className="absolute -inset-0.5 animate-pulse rounded-full bg-gradient-to-r from-[#ff2970] to-[#ff9770] opacity-70 blur-sm"></div>
                   <img
-                    src="/placeholder.svg?height=100&width=100"
+                    src="/dg.jpg?height=100&width=100"
                     alt="Logo Freecine"
                     className="relative h-full w-full rounded-full object-cover"
                   />
