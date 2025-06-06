@@ -73,7 +73,7 @@ export default function Hero() {
           </h1>
 
           <p className="mb-10 text-xl text-[#e2e2f5]">
-            Accédez au contenu premium de Netflix, Amazon Prime, Canal+, Disney+, TF1+, Paramount+, Apple TV+,
+            Accédez au contenu premium de Netflix, Amazon Prime, Disney+, TF1+, Paramount+, Apple TV+,
             Crunchyroll et HBO Max dans une seule application. En français ou VOSTFR, à vous de choisir.
           </p>
 

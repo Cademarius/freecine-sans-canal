@@ -19,12 +19,6 @@ export default function Platforms() {
       content: ["The Boys", "The Marvelous Mrs. Maisel", "Jack Ryan", "The Wheel of Time", "Reacher"],
     },
     {
-      name: "Canal+",
-      logo: "/canal.jpg?height=100&width=100",
-      color: "bg-gradient-to-br from-[#000000] to-[#333333]",
-      content: ["Le Bureau des Légendes", "Engrenages", "Baron Noir", "Validé", "Hippocrate"],
-    },
-    {
       name: "Disney+",
       logo: "/disney.jpg?height=100&width=100",
       color: "bg-gradient-to-br from-[#0063E5] to-[#0040A0]",

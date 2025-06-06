@@ -11,7 +11,7 @@ export default function UrgencyPopup() {
   const [visitors, setVisitors] = useState(0)
   const popupRef = useRef<HTMLDivElement>(null)
 
-  const fixedEndDate = new Date("2025-05-11T00:00:00")
+  const fixedEndDate = new Date("2025-06-30T23:59:59")
   const [countdown, setCountdown] = useState({ hours: 0, minutes: 0, seconds: 0 })
 
   useEffect(() => {
@@ -118,16 +118,16 @@ export default function UrgencyPopup() {
           </div>
 
           <p className="relative z-10 mb-3 sm:mb-4 text-center text-sm sm:text-base text-[#e2e2f5]">
-            <span className="font-bold text-white">DERNIÈRE CHANCE</span> d'obtenir Freecine à{" "}
-            <span className="font-bold text-white">5000 FCFA</span> au lieu de{" "}
-            <span className="font-bold text-white">15000 FCFA</span> !
-          </p>
+        <span className="font-bold text-white">OFFRE EXCEPTIONNELLE</span> - Accédez à Freecine pour{" "}
+        <span className="font-bold text-white">5000 FCFA</span> au lieu de{" "}
+        <span className="font-bold text-white">15000 FCFA</span> !
+      </p>
 
-          <div className="relative z-10 mb-3 sm:mb-4 grid grid-cols-2 gap-2">
-            <div className="flex items-center gap-1 sm:gap-2 rounded-lg bg-gradient-to-r from-[#ff2970]/20 to-[#ff9770]/20 p-2">
-              <DollarSign className="h-4 sm:h-5 w-4 sm:w-5 text-[#ff2970]" />
-              <span className="text-xs sm:text-sm text-[#e2e2f5]">Économisez 66%</span>
-            </div>
+      <div className="relative z-10 mb-3 sm:mb-4 grid grid-cols-2 gap-2">
+        <div className="flex items-center gap-1 sm:gap-2 rounded-lg bg-gradient-to-r from-[#ff2970]/20 to-[#ff9770]/20 p-2">
+          <DollarSign className="h-4 sm:h-5 w-4 sm:w-5 text-[#ff2970]" />
+          <span className="text-xs sm:text-sm text-[#e2e2f5]">Économisez 62%</span>
+        </div>
             <div className="flex items-center gap-1 sm:gap-2 rounded-lg bg-gradient-to-r from-[#7b2cbf]/20 to-[#5a189a]/20 p-2">
               <ShieldCheck className="h-4 sm:h-5 w-4 sm:w-5 text-[#7b2cbf]" />
               <span className="text-xs sm:text-sm text-[#e2e2f5]">100% Sécurisé</span>
