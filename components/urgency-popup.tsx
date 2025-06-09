@@ -8,30 +8,43 @@ import Link from "next/link"
 export default function UrgencyPopup() {
   const [isVisible, setIsVisible] = useState(false)
   const [hasClosedPopup, setHasClosedPopup] = useState(false)
-  const [visitors, setVisitors] = useState(0)
+  const [visitors, setVisitors] = useState(45) // Valeur initiale fixe
   const popupRef = useRef<HTMLDivElement>(null)
 
-  const fixedEndDate = new Date("2025-06-30T23:59:59")
+  // Calculer une date qui est toujours dans 24h à partir de maintenant
+  const getEndDate = () => {
+    const now = new Date()
+    return new Date(now.getTime() + 24 * 60 * 60 * 1000) // 24h à partir de maintenant
+  }
+
+  const [endDate] = useState(getEndDate()) // Fixe la date une seule fois au montage
   const [countdown, setCountdown] = useState({ hours: 0, minutes: 0, seconds: 0 })
 
   useEffect(() => {
+    // Vérifier si le popup a déjà été fermé dans cette session
     const popupClosed = localStorage.getItem("urgencyPopupClosed") === "true"
-
+    
     if (popupClosed) {
       setHasClosedPopup(true)
+      return // Ne pas continuer si déjà fermé
     }
-    const timer = setTimeout(() => {
+
+    // Timer pour afficher le popup après 30 secondes
+    const showTimer = setTimeout(() => {
       if (!hasClosedPopup) {
         setIsVisible(true)
       }
-    }, 30000)
+    }, 30000) // 30 secondes
 
-    const visitorInterval = setInterval(() => {
-      setVisitors(Math.floor(Math.random() * 10) + 40)
-    }, 5000)
+    return () => {
+      clearTimeout(showTimer)
+    }
+  }, []) // Dépendances vides pour n'exécuter qu'une fois
 
+  // Effet séparé pour le countdown
+  useEffect(() => {
     const countdownInterval = setInterval(() => {
-      const difference = fixedEndDate.getTime() - new Date().getTime()
+      const difference = endDate.getTime() - new Date().getTime()
 
       if (difference <= 0) {
         setCountdown({ hours: 0, minutes: 0, seconds: 0 })
@@ -45,6 +58,25 @@ export default function UrgencyPopup() {
       })
     }, 1000)
 
+    return () => {
+      clearInterval(countdownInterval)
+    }
+  }, [endDate])
+
+  // Effet séparé pour les visiteurs
+  useEffect(() => {
+    const visitorInterval = setInterval(() => {
+      // Variation plus réaliste entre 40 et 55
+      setVisitors(Math.floor(Math.random() * 16) + 40)
+    }, 8000) // Change toutes les 8 secondes
+
+    return () => {
+      clearInterval(visitorInterval)
+    }
+  }, [])
+
+  // Effet séparé pour gérer les clics en dehors
+  useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (popupRef.current && !popupRef.current.contains(event.target as Node)) {
         closePopup()
@@ -56,12 +88,9 @@ export default function UrgencyPopup() {
     }
 
     return () => {
-      clearTimeout(timer)
-      clearInterval(visitorInterval)
-      clearInterval(countdownInterval)
       document.removeEventListener("mousedown", handleClickOutside)
     }
-  }, [hasClosedPopup, isVisible])
+  }, [isVisible])
 
   const closePopup = () => {
     setIsVisible(false)
@@ -118,16 +147,16 @@ export default function UrgencyPopup() {
           </div>
 
           <p className="relative z-10 mb-3 sm:mb-4 text-center text-sm sm:text-base text-[#e2e2f5]">
-        <span className="font-bold text-white">OFFRE EXCEPTIONNELLE</span> - Accédez à Freecine pour{" "}
-        <span className="font-bold text-white">5000 FCFA</span> au lieu de{" "}
-        <span className="font-bold text-white">15000 FCFA</span> !
-      </p>
+            <span className="font-bold text-white">DERNIÈRE CHANCE</span> d'obtenir Freecine à{" "}
+            <span className="font-bold text-white">5000 FCFA</span> au lieu de{" "}
+            <span className="font-bold text-white">15000 FCFA</span> !
+          </p>
 
-      <div className="relative z-10 mb-3 sm:mb-4 grid grid-cols-2 gap-2">
-        <div className="flex items-center gap-1 sm:gap-2 rounded-lg bg-gradient-to-r from-[#ff2970]/20 to-[#ff9770]/20 p-2">
-          <DollarSign className="h-4 sm:h-5 w-4 sm:w-5 text-[#ff2970]" />
-          <span className="text-xs sm:text-sm text-[#e2e2f5]">Économisez 62%</span>
-        </div>
+          <div className="relative z-10 mb-3 sm:mb-4 grid grid-cols-2 gap-2">
+            <div className="flex items-center gap-1 sm:gap-2 rounded-lg bg-gradient-to-r from-[#ff2970]/20 to-[#ff9770]/20 p-2">
+              <DollarSign className="h-4 sm:h-5 w-4 sm:w-5 text-[#ff2970]" />
+              <span className="text-xs sm:text-sm text-[#e2e2f5]">Économisez 66%</span>
+            </div>
             <div className="flex items-center gap-1 sm:gap-2 rounded-lg bg-gradient-to-r from-[#7b2cbf]/20 to-[#5a189a]/20 p-2">
               <ShieldCheck className="h-4 sm:h-5 w-4 sm:w-5 text-[#7b2cbf]" />
               <span className="text-xs sm:text-sm text-[#e2e2f5]">100% Sécurisé</span>
