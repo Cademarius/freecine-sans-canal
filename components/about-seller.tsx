@@ -57,59 +57,6 @@ export default function AboutSeller() {
           transition={{ duration: 0.5 }}
           className="grid gap-8 md:grid-cols-2"
         >
-          <Card className="group relative overflow-hidden border-[#ff2970]/20 bg-[#150329]/40 shadow-md backdrop-blur-md transition-all duration-300 hover:border-[#ff2970]/40 hover:shadow-[0_0_20px_rgba(255,41,112,0.2)]">
-            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZGVmcz4KICA8cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgIDxwYXRoIGQ9Ik0gMjAgMCBMIDAgMCAwIDIwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYxMCIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgPC9wYXR0ZXJuPgo8L2RlZnM+CjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiIC8+Cjwvc3ZnPg==')] opacity-20"></div>
-            <div className="absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-[#ff2970] via-[#7b2cbf] to-[#4cc9f0] transition-all duration-500 group-hover:w-full"></div>
-
-            <CardContent className="relative z-10 p-6">
-              <div className="mb-4 flex items-center gap-4">
-                <div className="relative h-16 w-16 overflow-hidden rounded-full">
-                  <div className="absolute -inset-0.5 animate-pulse rounded-full bg-gradient-to-r from-[#ff2970] to-[#ff9770] opacity-70 blur-sm"></div>
-                  <img
-                    src="/dg.jpg?height=100&width=100"
-                    alt="Logo Freecine"
-                    className="relative h-full w-full rounded-full object-cover"
-                  />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-white">DigitAfrik Store</h3>
-                  <p className="text-sm text-[#e2e2f5]/70">Votre partenaire de streaming depuis 2023</p>
-                </div>
-              </div>
-
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-[#ff2970]/20 to-[#ff9770]/20">
-                    <MapPin className="h-4 w-4 text-[#ff2970]" />
-                  </div>
-                  <div>
-                    <p className="font-medium text-white">Adresse</p>
-                    <p className="text-sm text-[#e2e2f5]/70">Porto Novo</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-[#ff2970]/20 to-[#ff9770]/20">
-                    <Mail className="h-4 w-4 text-[#ff2970]" />
-                  </div>
-                  <div>
-                    <p className="font-medium text-white">Email</p>
-                    <p className="text-sm text-[#e2e2f5]/70">gbetievladimir@gmail.com</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-[#ff2970]/20 to-[#ff9770]/20">
-                    <Phone className="h-4 w-4 text-[#ff2970]" />
-                  </div>
-                  <div>
-                    <p className="font-medium text-white">Téléphone</p>
-                    <p className="text-sm text-[#e2e2f5]/70">229 01 67 22 19 58</p>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
 
           <Card className="group relative overflow-hidden border-[#4cc9f0]/20 bg-[#150329]/40 shadow-md backdrop-blur-md transition-all duration-300 hover:border-[#4cc9f0]/40 hover:shadow-[0_0_20px_rgba(76,201,240,0.2)]">
             <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZGVmcz4KICA8cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgIDxwYXRoIGQ9Ik0gMjAgMCBMIDAgMCAwIDIwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYxMCIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgPC9wYXR0ZXJuPgo8L2RlZnM+CjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiIC8+Cjwvc3ZnPg==')] opacity-20"></div>

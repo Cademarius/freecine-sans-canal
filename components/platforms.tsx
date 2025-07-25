@@ -164,7 +164,7 @@ export default function Platforms() {
 
           <p className="relative mb-6 text-lg text-[#e2e2f5]">
             Avec Freecine, accédez à tout ce contenu pour seulement{" "}
-            <span className="font-bold text-white">5000 FCFA (8$)</span> par an !
+            <span className="font-bold text-white">3500 FCFA (8$)</span> par an !
           </p>
 
           <Button

@@ -30,7 +30,7 @@ export default function FAQ() {
     {
       question: "Comment fonctionne l'abonnement ?",
       answer:
-        "L'abonnement à Freecine est annuel, au prix de 5000 FCFA (environ 8$) par an. Vous pouvez annuler à tout moment. Nous proposons également une garantie satisfait ou remboursé de 30 jours.",
+        "L'abonnement à Freecine est annuel, au prix de 3500 FCFA (environ 8$) par an. Vous pouvez annuler à tout moment. Nous proposons également une garantie satisfait ou remboursé de 30 jours.",
     },
     {
       question: "Est-ce légal d'accéder à tout ce contenu pour ce prix ?",

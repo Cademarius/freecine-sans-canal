@@ -50,7 +50,7 @@ export default function Features() {
       icon: <DollarSign className="h-12 w-12 text-[#ff2970]" />,
       title: "Économisez Gros",
       description:
-        "Payez 5000 FCFA par an au lieu de 50000 FCFA pour accéder à 9 plateformes premium. Une économie de 90% tous les mois !",
+        "Payez 3500 FCFA par an au lieu de 50000 FCFA pour accéder à 9 plateformes premium. Une économie de 90% tous les mois !",
       color: "from-[#ff2970]/20 to-[#ff9770]/20",
       borderColor: "border-[#ff2970]/30",
       buttonColor: "from-[#ff2970] to-[#ff9770]",

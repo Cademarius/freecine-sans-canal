@@ -82,7 +82,7 @@ export default function Pricing() {
                   <span className="text-lg text-[#e2e2f5]/70 line-through">15000 FCFA</span>
                   <div className="flex items-baseline justify-center">
                     <span className="bg-gradient-to-r from-[#ff2970] to-[#ff9770] bg-clip-text text-6xl font-bold text-transparent">
-                      5000
+                      3500
                     </span>
                     <span className="ml-2 text-xl text-white">FCFA</span>
                   </div>
@@ -147,7 +147,7 @@ export default function Pricing() {
           <p className="relative mb-6 text-lg text-[#e2e2f5]">
             L'abonnement à ces 9 plateformes vous coûterait plus de{" "}
             <span className="font-bold text-white">50000 FCFA</span> par mois. Avec Freecine, accédez à tout pour
-            seulement <span className="font-bold text-white">5000 an</span> !
+            seulement <span className="font-bold text-white">3500 an</span> !
           </p>
 
           <Button

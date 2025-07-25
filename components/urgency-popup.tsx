@@ -148,7 +148,7 @@ export default function UrgencyPopup() {
 
           <p className="relative z-10 mb-3 sm:mb-4 text-center text-sm sm:text-base text-[#e2e2f5]">
             <span className="font-bold text-white">DERNIÈRE CHANCE</span> d'obtenir Freecine à{" "}
-            <span className="font-bold text-white">5000 FCFA</span> au lieu de{" "}
+            <span className="font-bold text-white">3500 FCFA</span> au lieu de{" "}
             <span className="font-bold text-white">15000 FCFA</span> !
           </p>
 
