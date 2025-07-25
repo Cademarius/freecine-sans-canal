@@ -88,24 +88,7 @@ export default function Footer() {
           </div>
 
           <div className="sm:col-span-2 lg:col-span-1">
-            <h3 className="mb-4 text-lg font-semibold text-white">Contact</h3>
-            <ul className="space-y-3 text-sm sm:text-base">
-              <li className="flex items-center gap-2">
-                <Mail className="h-5 w-5 text-[#ff2970]" />
-                <a
-                  href="mailto:gbetievladimir@gmail.com"
-                  className="text-[#e2e2f5]/80 transition-colors hover:text-[#ff2970]"
-                >
-                  gbetievladimir@gmail.com
-                </a>
-              </li>
-              <li className="flex items-center gap-2">
-                <Phone className="h-5 w-5 text-[#ff2970]" />
-                <a href="tel:+290167221958" className="text-[#e2e2f5]/80 transition-colors hover:text-[#ff2970]">
-                  +229 01 67 22 19 58
-                </a>
-              </li>
-            </ul>
+           
 
             <h3 className="mb-4 mt-6 text-lg font-semibold text-white">Moyens de Paiement</h3>
             <div className="flex flex-wrap gap-2">
@@ -162,7 +145,7 @@ export default function Footer() {
 
         <div className="border-t border-[#7b2cbf]/20 pt-6 text-center">
           <p className="text-sm text-[#e2e2f5]/60">
-            &copy; {new Date().getFullYear()} DigitAfrik Store. Tous droits réservés.
+            &copy; {new Date().getFullYear()} Tous droits réservés.
           </p>
         </div>
       </div>
